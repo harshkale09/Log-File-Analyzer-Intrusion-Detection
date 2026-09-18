@@ -1,0 +1,4 @@
+IP,Attack_Type,Severity,Reason,Endpoint,Status,Threat_Intel_Matched,Threat_Intel_Details
+10.0.0.50,Brute Force Attack,HIGH,Detected 6 failed login attempts (HTTP 401),/login,401,True,Known Brute Force Scanner (AbuseIPDB Threat Score: 85%)
+10.0.0.88,Scanning / Reconnaissance,MEDIUM,"Accessing sensitive endpoints: ['/admin', '/wp-admin', '/phpmyadmin', '/.env', '/config.php']","/admin, /wp-admin, /phpmyadmin, /.env, /config.php",403/404,True,Known Web Directory Crawler / Recon Host
+10.0.0.99,DoS / High Request Rate,HIGH,High volume of requests generated: 12 total requests,Multiple,Various,True,High-Volume Traffic Generator / Botnet Node
